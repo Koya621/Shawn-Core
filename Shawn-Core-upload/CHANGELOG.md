@@ -7,4 +7,9 @@
 - 收录 Codex Skill 版。
 - 新增 ChatGPT 网页端 GPT 迁移包。
 - 明确 Shawn 没有固定海报风格偏好，每次按用户当次需求判断。
-- test sync from home computer
+- 强化 Shawn 的设计师思考能力，加入设计推理、任务分流、资产锁定和学习吸收规则。
+- 新增海报诊断、任务分流、资产锁定、学习吸收等设计知识文件。
+- 新增负面约束库，帮助 Shawn 主动避开 AI 常见问题和设计层失误。
+- 新增成功案例库和失败案例库，准备沉淀长期案例学习能力。
+- 新增 external-libraries 目录，建立外部 Prompt Library 的接入、筛选和提炼流程。
+- 为 `awesome-gpt-image-2` 建立专门接入笔记和统一提炼模板。

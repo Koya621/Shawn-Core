@@ -10,6 +10,7 @@ Shawn Core 是 Shawn / 顺子的统一知识仓库，用来同步和维护两个
 - `codex-skill/Shawn/`：Codex 本地 Skill 文件。
 - `gpt-package/`：上传到 ChatGPT 自定义 GPT 的说明和知识文件。
 - `design-library/`：长期积累的设计原则、风格库、提示词模式和审美自检清单。
+- `external-libraries/`：外部 Prompt Library 和参考仓库的接入说明与提炼笔记。
 - `assets/`：角色卡、三视图、参考资产。
 - `CHANGELOG.md`：每次升级记录。
 
@@ -37,4 +38,3 @@ Shawn Core 是 Shawn / 顺子的统一知识仓库，用来同步和维护两个
 1. 把 `gpt-package/gpt-instructions.md` 粘贴到 GPT Instructions。
 2. 把 `gpt-package/knowledge-shawn-profile.md`、`design-library/` 里的核心文件和 `assets/shunzi-character-card.png` 上传到 Knowledge。
 3. 开启图片生成能力。
-
