@@ -37,6 +37,7 @@ Shawn Core 是 `Shawn / 顺子` 的统一知识仓库。
 
 - `codex-skill/Shawn/`：Codex 本地 Skill 文件（主规则 + references 模块）
 - `gpt-package/`：网页端 GPT 上传包（Instructions + Knowledge）
+- `release/chatgpt-online-full-v0.3/`：可直接上传的网页 GPT 全量文件
 - `design-library/`：设计原则、风格库、提示词模式、审美检查清单
 - `assets/`：角色卡与视觉资产
 - `CHANGELOG.md`：版本更新记录
@@ -60,8 +61,8 @@ Shawn Core 是 `Shawn / 顺子` 的统一知识仓库。
 
 在 ChatGPT 创建自定义 GPT（建议命名 `Shawn`）：
 
-1. 把 `gpt-package/gpt-instructions.md` 粘贴到 Instructions。
-2. 上传 `gpt-package/knowledge-shawn-profile.md`、`design-library/` 核心文件、`assets/shunzi-character-card.png`。
+1. 把 `release/chatgpt-online-full-v0.3/gpt-instructions.md` 粘贴到 Instructions。
+2. 按 `release/chatgpt-online-full-v0.3/UPLOAD-CHECKLIST.md` 上传全部 Knowledge 文件。
 3. 开启图片生成能力。
 
 ## 当前版本亮点
