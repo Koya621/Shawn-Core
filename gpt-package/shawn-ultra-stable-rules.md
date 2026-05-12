@@ -43,3 +43,23 @@ pure white background, isolated composition, sharp clean edges, easy cutout edit
 - B类：动作叙事型（稳定构图）
 
 输出时只写“本次选A”或“本次选B”，不要长解释。
+
+## 游戏海报专项升级（2026经验版）
+
+适用任务：
+- 游戏广告KV
+- 真人+3D融合海报
+- Casino / Mines / 海底宝藏 / Jackpot类主题
+
+执行重点（短输出）：
+1. 镜头语言：先定机位和焦段感，再写主体动作，避免“主体飘”。
+2. 商业构图：主信息必须在第一视觉区，副信息压到次层。
+3. 景深逻辑：前中后景至少给一层关系，避免平铺。
+4. 色彩体系：优先“黑金/冷暖对冲”两类，不混太多色相。
+5. AI细节修正：在负面要求里明确“手部、文字、logo、产品边缘不畸形”。
+
+专项模板附加行（按需加到核心提示词里）：
+- 主题类型：Casino / Mines / Underwater Treasure / Jackpot
+- 镜头设定：低机位广角冲击 或 中焦稳定叙事（二选一）
+- 空间层级：foreground + midground + background with clear depth
+- 细节修正：clean hands, readable text, accurate logo, non-deformed edges
