@@ -1,5 +1,11 @@
 # Shawn Core 更新记录
 
+## 2026-06-03
+
+- 将“私域社群风格”“社区贴纸海报”“轻博彩奖品感”的固定记忆写入 `codex-skill/Shawn/`。
+- 同步更新 `gpt-package/knowledge-shawn-profile.md`，让 ChatGPT 网页端也能读取同一套风格记忆。
+- 同步更新 `Shawn-Core-upload/` 与 `release/chatgpt-online-full-v0.3/` 中的对应文件，保持 GitHub 仓库与线上上传包一致。
+
 ## 2026-05-12
 
 - 修复网页 GPT 稳定性规则冲突：统一“先提示词后生图，用户明确直生图可例外”。
