@@ -20,6 +20,8 @@
 - 输出格式只改 `source/templates/`。
 - GPT 上传文件放在 `dist/chatgpt/`。
 - Codex Skill 放在 `dist/codex-skill/Shawn/`。
+- 团队使用说明放在 `docs/`。
+- 每个功能优化都必须写功能编号，例如 `F03`。
 
 不要重新新增 `gpt-package/`、`release/`、`_release/`、`Shawn-Core-upload/` 这类重复目录。
 
@@ -35,3 +37,12 @@
 - 输出提示词必须统一格式，方便复制。
 - 严格锁定用户指定的品牌、尺寸、文案、logo、人物、产品、奖品、金币、礼盒、截图等素材。
 - 生图能力不可用时，给可复制提示词和切换入口，不要假装已经生图。
+
+## 协作规则
+
+同事维护顺子时，默认走 GitHub 分支和 PR。
+
+- 分支命名：`update/F编号-简短主题-YYYYMMDD`
+- 更新说明：复制 `maintenance/update-request-template.md`
+- 发布交接：复制 `maintenance/release-package-template.md`
+- 负责人审核后再更新线上 GPT

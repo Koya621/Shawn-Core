@@ -11,6 +11,27 @@
 
 成功标志：顺子能按统一模板输出，并能在生图不可用时给兜底提示词。
 
+## 发布前交接单
+
+每次正式更新线上 GPT 前，复制：
+
+```text
+maintenance/release-package-template.md
+```
+
+另存为：
+
+```text
+maintenance/releases/shawn-gpt-update-YYYYMMDD-v01.md
+```
+
+交接单必须写清：
+
+- 影响哪些功能编号
+- 上传哪些文件
+- 删除哪些旧文件
+- 测试结果是什么
+
 ## 发布到 Codex
 
 1. 复制 `dist/codex-skill/Shawn/` 到 Codex skills 目录。

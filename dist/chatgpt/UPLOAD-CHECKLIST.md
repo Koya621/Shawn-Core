@@ -7,6 +7,12 @@
 - 需要用到的品牌卡：从 `source/brands/品牌名/brand-card.md` 上传。
 - 关键 logo 和 3-10 张优秀案例：按实际需要上传。
 
+## 上线前先看
+
+- `docs/shawn-user-guide.md`：给团队看的顺子使用说明。
+- `docs/function-index.md`：功能编号总表。
+- `maintenance/release-package-template.md`：每次上线前的发布交接单模板。
+
 ## GPT Capabilities
 
 必须开启：

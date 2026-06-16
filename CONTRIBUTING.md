@@ -14,6 +14,30 @@
 3. 新增提示词必须使用统一模板。
 4. 新增品牌必须先填品牌卡。
 5. 每次重要修改都要更新 `CHANGELOG.md`。
+6. 每次功能更新都要写清 `F编号`，例如 `F03` 或 `F12`。
+7. 同事更新时走分支和 PR，不直接推送 `main`。
+
+## 分支命名
+
+```text
+update/F编号-简短主题-YYYYMMDD
+```
+
+示例：
+
+```text
+update/F03-poster-prompt-20260616
+```
+
+## 更新说明
+
+每次更新复制 `maintenance/update-request-template.md`，另存为：
+
+```text
+maintenance/updates/shawn-update-YYYYMMDD-v01.md
+```
+
+负责人审核时，会看这里判断是否可以合并和上线 GPT。
 
 ## 新增品牌
 

@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.1.0 - Function Guide And Collaboration Workflow
+
+- 新增顺子功能编号体系：F01-F14。
+- 新增团队使用说明：`docs/shawn-user-guide.md`。
+- 新增功能编号总表：`docs/function-index.md`。
+- 新增同事 Codex + GitHub Desktop 协作流程：`docs/coworker-codex-workflow.md`。
+- 新增 PR 模板、更新说明模板、GPT 发布交接单模板。
+- 更新 README，加入顺子形象、快速开始、功能总览和维护入口。
+- 同步 GPT Knowledge 和 Codex Skill，让顺子能识别功能编号。
+
 ## v1.0.0 - DE Art Team Skills Upgrade
 
 - 清理旧重复结构：移除 `Shawn-Core-upload/`、`release/`、`_release/`、`gpt-package/`、`design-library/`、旧 `codex-skill/` 和 `.DS_Store`。

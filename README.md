@@ -1,57 +1,119 @@
-# Shawn Core for DE Art Team
+# Shawn Core / 顺子设计助手
 
-Shawn Core 是 DE 美术组的设计助手知识仓库，用来维护「顺子 Shawn」在 ChatGPT 网页端和 Codex 端的同一套工作规则。
+> DE 美术组专用设计助手知识仓库。<br>
+> 用来维护线上 GPT 顺子、Codex 顺子 Skill、品牌素材规则和团队更新流程。
 
-现在的目标不是做一个只会按个人习惯写提示词的助手，而是做一个能服务团队生产的设计 Skills：
+![顺子主视觉](assets/showcase/shunzi-poster-tech.png)
 
-- 拆需求：把品牌、平台、尺寸、类型、交付物和缺失信息先整理清楚。
-- 调素材：根据品牌名匹配品牌卡、素材规则、风格关键词和禁用项。
-- 写提示词：按统一格式输出可复制的海报、修图、生图、视频提示词。
-- 做脚本：输出短视频脚本、KOL 视频分镜、字幕节奏和视频生成提示词。
-- 做质检：按 DE 美术组 SOP 检查主体、层级、文案、尺寸、品牌一致性。
-- 做沉淀：把好案例、坏案例、品牌变化和提示词优化沉淀回仓库。
+## 顺子是做什么的
 
-## 目录结构
+顺子 Shawn 是 DE 美术组的设计生产助手。它不是单纯的提示词生成器，而是帮团队把需求拆清楚、把画面方向定准、把提示词写稳定、把交付检查做完整。
+
+适合这些工作：
+
+- 海报、社媒图、活动图、私域图
+- AI 生图、修图、白底图、抠图素材
+- KOL 形象、角色海报、产品物料海报
+- 短视频脚本、分镜、视频生成提示词
+- 视觉诊断、质检复盘、品牌素材沉淀
+
+## 快速开始
+
+对顺子说话时，可以直接带功能编号：
 
 ```text
-source/
-  shawn-core.md              # 唯一主规则源
-  modules/                   # 六个能力模块
-  brands/                    # 品牌素材卡与上传格式
-  templates/                 # 输出模板
-dist/
-  chatgpt/                   # 上传到网页 GPT 的文件
-  codex-skill/Shawn/         # 安装到 Codex 的 Skill
-maintenance/                 # 维护流程、测试清单、发布说明
-assets/                      # 角色与展示素材
+顺子，F03，帮我给 X89 写一版 TG 活动海报提示词，1:1，主打 bonus。
 ```
 
-## 维护原则
+```text
+顺子，F12，帮我写一个 15 秒 KOL 视频脚本。
+```
 
-1. 日常只改 `source/`。
-2. 更新网页 GPT 时使用 `dist/chatgpt/`。
-3. 更新 Codex Skill 时使用 `dist/codex-skill/Shawn/`。
-4. 新增品牌先填 `source/brands/_template/brand-card.md`。
-5. 新增提示词必须进入 `source/templates/`，不要散落在聊天记录里。
+```text
+顺子，F10，帮我诊断这张图哪里要改。
+```
 
-## ChatGPT 网页端部署
+成功标志：顺子会先拆清品牌、平台、尺寸和保留素材，再按固定模板输出可复制内容。
 
-1. 创建或编辑自定义 GPT。
-2. Instructions 粘贴 `dist/chatgpt/gpt-instructions.md`。
-3. Knowledge 上传 `dist/chatgpt/knowledge-shawn-core.md` 和需要的品牌卡。
-4. Capabilities 里开启 Image generation。
-5. 用 `maintenance/test-checklist.md` 做一次验收。
+## 功能总览
 
-成功标志：输入「顺子，帮我给 X89 做一张 TG 活动海报提示词」，输出会按统一模板给出设计判断、Prompt、Negative、后期排版建议和确认点。
+| 编号 | 功能 | 什么时候用 |
+| --- | --- | --- |
+| F01 | 需求拆解 | 需求信息不完整、怕返工 |
+| F02 | 品牌素材调用 | 需要按品牌风格、logo、案例来做 |
+| F03 | 海报 / 社媒提示词 | 做活动图、日常图、TG / INS 图 |
+| F04 | 白底图 / 抠图素材 | 要纯白背景、方便后期抠图 |
+| F05 | 角色 / KOL 形象 | 做人物、虚拟 KOL、角色海报 |
+| F06 | 产品 / 物料海报 | 做礼盒、奖杯、金币、App、产品图 |
+| F07 | 文案提取与重组 | 文案太乱，需要提炼标题和层级 |
+| F08 | 字体 / 标题升级 | 标题不够强、不够醒目 |
+| F09 | 风格学习 / 案例学习 | 给参考图，让顺子拆风格 |
+| F10 | 视觉诊断 | 图不好看、不清楚、不知道怎么改 |
+| F11 | AI 生图 / 修图 | 需要生成图、改图、局部优化 |
+| F12 | 视频脚本 / 分镜 / 视频提示词 | 做短视频、KOL 视频、AI 视频 |
+| F13 | 质检复盘 | 交付前检查、返工后沉淀规则 |
+| F14 | 生图不可用兜底 | 当前 GPT 模式不能直接生图 |
 
-## Codex 端部署
+完整说明见 [顺子使用说明](docs/shawn-user-guide.md) 和 [功能编号总表](docs/function-index.md)。
 
-把 `dist/codex-skill/Shawn/` 放到 Codex skills 目录。
+## 仓库怎么用
 
-成功标志：在 Codex 里输入「顺子」开头的需求，第一句固定回复 `兄弟，在呢`，并按 DE 美术组规则工作。
+```text
+source/        正式规则源，日常维护先改这里
+dist/          给线上 GPT 和 Codex 使用的发布文件
+docs/          给团队看的使用说明和协作说明
+maintenance/   发布、审查、更新交接模板
+assets/        顺子形象和展示素材
+```
 
-## 重要限制
+### 给线上 GPT 用
 
-网页端生图能力受 ChatGPT 当前模型和 GPT 配置影响。规则里已经加入兜底：如果当前模式不能生图，顺子必须输出可复制提示词，并提示切换到支持图像生成的入口。
+- Instructions：`dist/chatgpt/gpt-instructions.md`
+- Knowledge：`dist/chatgpt/knowledge-shawn-core.md`
+- 品牌卡：`dist/chatgpt/brands/品牌名/brand-card.md`
 
-详细排查见 `maintenance/chatgpt-image-generation-notes.md`。
+上线步骤见 [发布说明](maintenance/release-guide.md)。
+
+### 给 Codex 用
+
+- Skill 文件：`dist/codex-skill/Shawn/`
+- 同事维护流程：`docs/coworker-codex-workflow.md`
+
+## 团队协作规则
+
+同事不要直接改 `main`。推荐流程：
+
+1. 从 GitHub Desktop 新建分支。
+2. 分支名写功能编号，例如 `update/F03-poster-prompt-20260616`。
+3. 用 Codex 修改 `source/` 和对应 `dist/` 文件。
+4. 填写更新说明。
+5. 发 PR 给负责人审核。
+6. 负责人合并后，再手动更新线上 GPT。
+
+PR 模板会要求写清楚：
+
+- 改了哪些功能编号
+- 增加了哪些文件
+- 删除了哪些文件
+- 修复了什么问题
+- 怎么测试
+- 线上 GPT 要上传哪些文件
+
+## 顺子形象
+
+![顺子头像](assets/showcase/shawn-portrait.png)
+
+固定识别：黑色微卷短发、黑框眼镜、白衬衫、粉灰细条纹领带、蓝色牛仔裤、白鞋。
+
+常用 slogan：
+
+```text
+把画面排明白，把审美落到位。
+```
+
+## 重要提醒
+
+- 线上 GPT 最终仍由负责人上传。
+- 不要把账号、密码、内部群聊、客户隐私上传到 GPT Knowledge。
+- 大文件、PSD、视频工程放公司盘或 GitHub Release，只在品牌卡里写链接。
+- 修改功能时必须带 `F编号`，以后才能准确定位和继续升级。
