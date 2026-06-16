@@ -38,15 +38,15 @@ docs/function-index.md
 分支命名：
 
 ```text
-update/F编号-简短主题-YYYYMMDD
+update/P编号-简短主题-YYYYMMDD
 ```
 
 示例：
 
 ```text
-update/F03-poster-prompt-20260616
-update/F12-video-script-20260616
-update/F10-visual-review-20260616
+update/P01-social-poster-20260616
+update/P03-private-code-20260616
+update/V03-video-prompt-20260616
 ```
 
 ### 2. 告诉 Codex 要改什么
@@ -54,7 +54,7 @@ update/F10-visual-review-20260616
 推荐说法：
 
 ```text
-请只优化 F03 海报提示词，不要改其他功能。
+请只优化 P01 社媒图，不要改其他功能。
 需要同步更新 source 和 dist/chatgpt。
 最后帮我填写 maintenance/update-request-template.md 里的更新说明。
 ```
@@ -103,9 +103,9 @@ maintenance/updates/shawn-update-YYYYMMDD-v01.md
 commit 命名：
 
 ```text
-Update F03 poster prompt format
-Update F12 video script workflow
-Fix F14 image fallback wording
+Update P01 social poster format
+Update V01 video script workflow
+Fix V03 bilingual video prompt wording
 ```
 
 ### 6. 发 PR
@@ -115,7 +115,7 @@ Fix F14 image fallback wording
 PR 标题示例：
 
 ```text
-Update F03 poster prompt format
+Update P01 social poster format
 ```
 
 PR 里必须按模板填写，不要只写“更新了一下”。
@@ -138,6 +138,6 @@ PR 里必须按模板填写，不要只写“更新了一下”。
 - 直接改 `main`。
 - 文件名每次都叫 `新版.md`。
 - 只改 `dist/`，忘了改 `source/`。
-- 只写“优化提示词”，没写优化哪个功能编号。
+- 只写“优化提示词”，没写优化哪个 P / V 功能编号。
 - 删除文件不说明原因。
 - 没有测试截图或测试文字。

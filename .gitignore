@@ -2,6 +2,9 @@
 Thumbs.db
 *.tmp
 *.log
+config.json
+*.token
+*.secret
 dist/**/*.zip
 /release/
 /_release/

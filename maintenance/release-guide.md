@@ -30,6 +30,8 @@ maintenance/releases/shawn-gpt-update-YYYYMMDD-v01.md
 - 影响哪些功能编号
 - 上传哪些文件
 - 删除哪些旧文件
+- 是否需要同步 TG / 公盘 / 提示词网站
+- 是否涉及 TG bot 程序改动
 - 测试结果是什么
 
 ## 发布到 Codex
@@ -45,3 +47,4 @@ maintenance/releases/shawn-gpt-update-YYYYMMDD-v01.md
 - 不要上传客户隐私、账号密码、内部群聊记录。
 - 不要把未经确认的品牌素材当作正式素材。
 - 不要只更新 `dist/` 忘记更新 `source/`。
+- 不要提交 TG bot 的真实 `config.json`、token 或控制密码。

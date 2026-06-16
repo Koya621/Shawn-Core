@@ -14,19 +14,20 @@
 3. 新增提示词必须使用统一模板。
 4. 新增品牌必须先填品牌卡。
 5. 每次重要修改都要更新 `CHANGELOG.md`。
-6. 每次功能更新都要写清 `F编号`，例如 `F03` 或 `F12`。
+6. 每次功能更新都要写清 `P / V` 编号，例如 `P01-2` 或 `V03`。
 7. 同事更新时走分支和 PR，不直接推送 `main`。
 
 ## 分支命名
 
 ```text
-update/F编号-简短主题-YYYYMMDD
+update/P编号-简短主题-YYYYMMDD
 ```
 
 示例：
 
 ```text
-update/F03-poster-prompt-20260616
+update/P01-social-poster-20260616
+update/V03-video-prompt-20260616
 ```
 
 ## 更新说明

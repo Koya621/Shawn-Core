@@ -21,7 +21,7 @@
 - GPT 上传文件放在 `dist/chatgpt/`。
 - Codex Skill 放在 `dist/codex-skill/Shawn/`。
 - 团队使用说明放在 `docs/`。
-- 每个功能优化都必须写功能编号，例如 `F03`。
+- 每个功能优化都必须写功能编号，例如 `P01-2` 或 `V03`。
 
 不要重新新增 `gpt-package/`、`release/`、`_release/`、`Shawn-Core-upload/` 这类重复目录。
 
@@ -42,7 +42,7 @@
 
 同事维护顺子时，默认走 GitHub 分支和 PR。
 
-- 分支命名：`update/F编号-简短主题-YYYYMMDD`
+- 分支命名：`update/P编号-简短主题-YYYYMMDD`
 - 更新说明：复制 `maintenance/update-request-template.md`
 - 发布交接：复制 `maintenance/release-package-template.md`
 - 负责人审核后再更新线上 GPT

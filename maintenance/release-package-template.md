@@ -17,8 +17,9 @@ maintenance/releases/shawn-gpt-update-YYYYMMDD-v01.md
 ## 本次更新包含什么
 
 - 影响功能编号：
-- 主要修复：
-- 主要新增：
+- 本次新增：
+- 本次更新：
+- 本次预留：
 - 主要删除：
 
 ## 线上 GPT 需要上传的文件
@@ -39,23 +40,41 @@ maintenance/releases/shawn-gpt-update-YYYYMMDD-v01.md
 
 ```
 
+## TG / 公盘 / 提示词网站同步
+
+- [ ] 已运行 `scripts/sync-shawn-docs.ps1`
+- [ ] 需要同步 `dist/sync/tg-help.txt`
+- [ ] 需要同步 `dist/sync/prompt-site-guide.html`
+- [ ] 需要同步 `dist/sync/public-drive-guide.md`
+- [ ] 不需要同步
+
+## 是否涉及 TG bot 程序改动
+
+- [ ] 不涉及
+- [ ] 只涉及帮助 / 说明文案
+- [ ] 涉及程序逻辑，需单独测试：
+
 ## 上传后测试
 
 至少测试这些：
 
 ```text
-顺子，F03，帮我写 X89 TG 活动海报提示词。
-顺子，F12，写 15 秒 KOL 视频脚本。
-顺子，F10，帮我诊断这张图哪里要改。
-顺子，F14，当前不能生图怎么办？
+顺子，P01，帮我写 X89 TG 游戏推荐海报提示词。
+顺子，P01-2，做活动开奖海报。
+顺子，做一张私域兑换码图。
+顺子，V01，写 15 秒 KOL 视频脚本。
+顺子，V02，做 8 张分镜图方案。
+顺子，V03，给我中英文视频提示词。
 ```
 
 ## 测试结果
 
-- F03：
-- F12：
-- F10：
-- F14：
+- P01：
+- P01-2：
+- P03-2：
+- V01：
+- V02：
+- V03：
 
 ## 是否可以正式使用
 

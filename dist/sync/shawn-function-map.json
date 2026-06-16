@@ -1,0 +1,73 @@
+{
+  "version": "2026-06-16-pv",
+  "updated": [
+    "P/V编号体系",
+    "图片功能树",
+    "视频脚本/分镜/提示词规则",
+    "TG/公盘/提示词网站同步包"
+  ],
+  "categories": [
+    {
+      "id": "P",
+      "name": "图片功能",
+      "items": [
+        {
+          "id": "P01",
+          "name": "社媒图",
+          "status": "UPDATED",
+          "children": [
+            { "id": "P01-1", "name": "游戏推荐海报", "status": "NEW" },
+            { "id": "P01-2", "name": "活动开奖海报", "status": "NEW" },
+            { "id": "P01-3", "name": "品牌公告海报", "status": "NEW" },
+            { "id": "P01-4", "name": "收集引导海报", "status": "NEW" },
+            { "id": "P01-5", "name": "特定活动 / 节日海报", "status": "NEW" }
+          ]
+        },
+        {
+          "id": "P02",
+          "name": "白底图",
+          "status": "UPDATED",
+          "children": [
+            { "id": "P02-1", "name": "人物白底图", "status": "NEW" },
+            { "id": "P02-2", "name": "Banner 白底图", "status": "NEW" },
+            { "id": "P02-3", "name": "人物 + 文案白底图", "status": "NEW" },
+            { "id": "P02-4", "name": "道具 / 物料白底图", "status": "NEW" }
+          ]
+        },
+        {
+          "id": "P03",
+          "name": "私域图",
+          "status": "UPDATED",
+          "children": [
+            { "id": "P03-1", "name": "私域公告", "status": "NEW" },
+            { "id": "P03-2", "name": "兑换码图", "status": "NEW" },
+            { "id": "P03-3", "name": "私域贴纸风海报", "status": "UPDATED" },
+            { "id": "P03-X", "name": "小 IP / 表情包 / IP + 海报", "status": "PLANNED" }
+          ]
+        },
+        {
+          "id": "P04",
+          "name": "人物 / KOL 图",
+          "status": "UPDATED",
+          "children": [
+            { "id": "P04-1", "name": "新 KOL 设计", "status": "NEW" },
+            { "id": "P04-2", "name": "已有 KOL 出图", "status": "NEW" }
+          ]
+        },
+        { "id": "P05", "name": "产品 / 物料图", "status": "UPDATED", "children": [] },
+        { "id": "P06", "name": "文案与标题", "status": "UPDATED", "children": [] },
+        { "id": "P07", "name": "视觉诊断与质检", "status": "UPDATED", "children": [] }
+      ]
+    },
+    {
+      "id": "V",
+      "name": "视频功能",
+      "items": [
+        { "id": "V01", "name": "视频脚本", "status": "UPDATED", "children": [] },
+        { "id": "V02", "name": "分镜图方案", "status": "UPDATED", "children": [] },
+        { "id": "V03", "name": "视频生成提示词", "status": "UPDATED", "children": [] },
+        { "id": "V04", "name": "视频整包", "status": "NEW", "children": [] }
+      ]
+    }
+  ]
+}

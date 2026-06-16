@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.2.0 - P/V Function Tree And Sync Pack
+
+- 将顺子功能编号升级为图片 `P`、视频 `V` 两大类。
+- 新增短子编号格式，例如 `P01-1`，避免长编号难输入。
+- 新增 `docs/function-tree.md`，用 Mermaid 展示功能树，并标注 `NEW`、`UPDATED`、`PLANNED`。
+- 新增 `docs/index.md`、`docs/gpt-public-description.md`、`docs/gpt-answer-rules.md`。
+- 同步更新 GPT Knowledge、GPT Instructions、Codex Skill 和维护模板。
+- 新增 `sync/` 源文件、`scripts/sync-shawn-docs.ps1` 和 `dist/sync/` 同步输出，用于 TG 帮助、公盘说明和提示词网站说明。
+- 增加 TG bot 安全约束：不提交真实 `config.json`、token 或控制密码；本版不改 TG bot 归档核心逻辑。
+
 ## v1.1.0 - Function Guide And Collaboration Workflow
 
 - 新增顺子功能编号体系：F01-F14。
