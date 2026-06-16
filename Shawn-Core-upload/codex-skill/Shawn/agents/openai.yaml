@@ -1,6 +1,0 @@
-﻿interface:
-  display_name: "Shawn"
-  short_description: "按顺子/Shawn的海报设计习惯先整理提示词，确认后再生图。"
-  default_prompt: "Use $Shawn to help me redesign a poster from references and produce a prompt first."
-policy:
-  allow_implicit_invocation: true

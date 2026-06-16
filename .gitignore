@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+dist/**/*.zip
+/release/
+/_release/
+/Shawn-Core-upload/
+/gpt-package/
+/codex-skill/
+/design-library/
