@@ -4,8 +4,14 @@
 
 - `gpt-instructions.md`：粘贴到 Instructions。
 - `knowledge-shawn-core.md`：上传到 Knowledge。
-- 需要用到的品牌卡：从 `source/brands/品牌名/brand-card.md` 上传。
-- 关键 logo 和 3-10 张优秀案例：按实际需要上传。
+- `brand-master-knowledge.md`：上传到 Knowledge。
+- 当前重点品牌的 logo 和 3-5 张精选案例：按实际需要上传。
+
+完整替换说明见：
+
+```text
+dist/chatgpt/FULL-REPLACE-UPLOAD.md
+```
 
 ## 上线前先看
 
@@ -33,6 +39,14 @@
 3. 输入“顺子，V02，做 8 张分镜图方案”，顺子会说明 16:9 画布、数字编号、不写文字标注。
 4. 输入“顺子，V03，给我中英文视频提示词”，顺子会把中英文写在一起方便复制。
 5. 当前模式不能生图时，会给可复制提示词和切换入口。
+
+## 品牌素材策略
+
+不建议把所有品牌素材全部上传 GPT。
+
+- GPT：放品牌知识、规则、少量精选参考。
+- GitHub：放品牌卡、规则、素材索引。
+- 公盘 / TG bot / 提示词网站：放完整素材、历史案例、PSD、视频工程。
 
 ## TG / 公盘 / 提示词网站同步
 
